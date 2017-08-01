@@ -1,0 +1,78 @@
+﻿<Project Sdk="FSharp.NET.Sdk;Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.6</TargetFramework>
+    <DefineConstants>FX_ATLEAST_PORTABLE</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="../ExtCore/Pervasive.fs" />
+    <Compile Include="../ExtCore/Substring.fs" />
+    <Compile Include="../ExtCore/String.fs" />
+    <Compile Include="../ExtCore/Control.Agents.fs" />
+    <Compile Include="../ExtCore/Control.fs" />
+    <Compile Include="../ExtCore/Control.Observable.fs" />
+    <Compile Include="../ExtCore/Control.Indexed.fs" />
+    <Compile Include="../ExtCore/Control.Cps.fs" />
+    <Compile Include="../ExtCore/Control.Tasks.fs" />
+    <Compile Include="../ExtCore/Collections.fs" />
+    <Compile Include="../ExtCore/Collections.Seq.fs" />
+    <Compile Include="../ExtCore/Collections.ListZipper.fs" />
+    <Compile Include="../ExtCore/Collections.List.fs" />
+    <Compile Include="../ExtCore/Collections.Vector.fs" />
+    <Compile Include="../ExtCore/Collections.VectorView.fs" />
+    <Compile Include="../ExtCore/Collections.ResizeArray.fs" />
+    <Compile Include="../ExtCore/Collections.Array.fs" />
+    <Compile Include="../ExtCore/Collections.TaggedArray.fs" />
+    <Compile Include="../ExtCore/Collections.ArrayView.fs" />
+    <Compile Include="../ExtCore/Collections.Set.fs" />
+    <Compile Include="../ExtCore/Collections.Map.fs" />
+    <Compile Include="../ExtCore/Collections.Dict.fs" />
+    <Compile Include="../ExtCore/Collections.Bimap.fs" />
+    <Compile Include="../ExtCore/Collections.IntSet.fs" />
+    <Compile Include="../ExtCore/Collections.IntMap.fs" />
+    <Compile Include="../ExtCore/Collections.IntBimap.fs" />
+    <Compile Include="../ExtCore/Collections.LongSet.fs" />
+    <Compile Include="../ExtCore/Collections.LongMap.fs" />
+    <Compile Include="../ExtCore/Collections.LongBimap.fs" />
+    <Compile Include="../ExtCore/Collections.HashSet.fs" />
+    <Compile Include="../ExtCore/Collections.HashMap.fs" />
+    <Compile Include="../ExtCore/Collections.Multiset.fs" />
+    <Compile Include="../ExtCore/Collections.Multimap.fs" />
+    <Compile Include="../ExtCore/Collections.LazyList.fs" />
+    <Compile Include="../ExtCore/Collections.Queue.fs" />
+    <Compile Include="../ExtCore/Collections.PriorityQueue.fs" />
+    <Compile Include="../ExtCore/Collections.AsyncSeq.fs" />
+    <Compile Include="../ExtCore/ControlCollections.State.fs" />
+    <Compile Include="../ExtCore/ControlCollections.Reader.fs" />
+    <Compile Include="../ExtCore/ControlCollections.ReaderState.fs" />
+    <Compile Include="../ExtCore/ControlCollections.Maybe.fs" />
+    <Compile Include="../ExtCore/ControlCollections.ReaderMaybe.fs" />
+    <Compile Include="../ExtCore/ControlCollections.Choice.fs" />
+    <Compile Include="../ExtCore/ControlCollections.ReaderChoice.fs" />
+    <Compile Include="../ExtCore/ControlCollections.ProtectedState.fs" />
+    <Compile Include="../ExtCore/ControlCollections.ReaderProtectedState.fs" />
+    <Compile Include="../ExtCore/ControlCollections.StatefulChoice.fs" />
+    <Compile Include="../ExtCore/ControlCollections.Async.fs" />
+    <Compile Include="../ExtCore/ControlCollections.AsyncState.fs" />
+    <Compile Include="../ExtCore/ControlCollections.AsyncMaybe.fs" />
+    <Compile Include="../ExtCore/ControlCollections.AsyncChoice.fs" />
+    <Compile Include="../ExtCore/ControlCollections.AsyncProtectedState.fs" />
+    <Compile Include="../ExtCore/ControlCollections.Cont.fs" />
+    <Compile Include="../ExtCore/ControlCollections.StateCont.fs" />
+    <Compile Include="../ExtCore/Caching.LruCache.fs" />
+    <Compile Include="../ExtCore/NativeInterop.fs" />
+    <Compile Include="../ExtCore/IO.fs" />
+    <Compile Include="../ExtCore/Net.fs" />
+    <Compile Include="../ExtCore/Args.fs" />
+    <Compile Include="../ExtCore/ExtraPervasives.fs" />
+    <Compile Include="../ExtCore/AssemblyInfo.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FSharp.Core" Version="4.1.*" />
+    <PackageReference Include="FSharp.NET.Sdk" Version="1.0.*" PrivateAssets="All" />
+    <PackageReference Include="System.Diagnostics.TraceSource" Version="4.3.0" />
+  </ItemGroup>
+
+</Project>
