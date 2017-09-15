@@ -21,3 +21,4 @@ install:
 script:
   - dotnet build ExtCore.sln
   - dotnet test ExtCore.Tests\ExtCore.Tests.fsproj
+  
