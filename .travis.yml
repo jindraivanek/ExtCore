@@ -7,8 +7,7 @@ sudo: false
 # TODO : Enable both mono and dotnet builds: https://docs.travis-ci.com/user/languages/csharp/#Testing-Against-Mono-and-.NET-Core
 mono:
   - latest
-dotnet:
-  - 2.0.0
+dotnet: 2.0.0
 
 install:
   - dotnet restore
@@ -21,4 +20,3 @@ install:
 script:
   - dotnet build ExtCore.sln
   - dotnet test ExtCore.Tests\ExtCore.Tests.fsproj
-  
