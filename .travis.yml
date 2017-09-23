@@ -23,5 +23,7 @@ script:
   - dotnet build ExtCore/ExtCore.fsproj --framework "netstandard2.0"
   - FrameworkPathOverride=$MONO_BASE_PATH/4.5-api/ dotnet build ExtCore/ExtCore.fsproj --framework "net45"
   - dotnet test ExtCore.Tests/ExtCore.Tests.fsproj --framework "netcoreapp2.0"
-  - FrameworkPathOverride=$MONO_BASE_PATH/4.5-api/ dotnet test ExtCore.Tests/ExtCore.Tests.fsproj --framework "net45"
-  
+#  - FrameworkPathOverride=$MONO_BASE_PATH/4.5-api/ dotnet test ExtCore.Tests/ExtCore.Tests.fsproj --framework "net45"
+  - nuget install NUnit.ConsoleRunner -Version 3.7.0 -OutputDirectory $PWD/packages
+  - mono packages/NUnit.ConsoleRunner.3.7.0/tools/nunit3-console.exe ExtCore.Tests/bin/Debug/net45/ExtCore.Tests.dll
+
